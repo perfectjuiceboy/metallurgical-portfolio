@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computing Fundamentals | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-area" id="clickableLogo">
+                <img src="images/logo.png" alt="University Portfolio Logo" class="site-logo">
+                <span class="logo-text">Elementum <span>Prime</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-spacer">
+        <section class="about-layout contact-layout">
+            <div class="info-sidebar">
+                <h3>Contact Details</h3>
+                <hr class="accent-line">
+                <p><strong>Location:</strong> Ongwediva, Namibia</p>
+                <p><strong>Phone:</strong> +264 81 848 0358</p>
+                <p><strong>Email:</strong> satyacurran@gmail.com</p>
+            </div>
+            
+            <div class="bio-content form-box">
+                <h2>Initialize Engineering Consultation</h2>
+                <hr class="accent-line">
+                <form id="portfolioContactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="userName">Full Name</label>
+                            <input type="text" id="userName" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email Address</label>
+                            <input type="email" id="userEmail" required placeholder="name@domain.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectType">Consultation Category Focus</label>
+                        <select id="projectType" required>
+                            <option value="" disabled selected>Select specialization scope...</option>
+                            <option value="metallurgical">Extractive Metallurgy / Ore Analytics</option>
+                            <option value="materials">Materials Optimization & Testing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budgetRange">Estimated Scope Scale Target</label>
+                        <input type="range" id="budgetRange" min="500" max="10000" step="500" value="2500">
+                        <div class="range-val">Value Target: $<span id="budgetValue">2500</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="userMessage">Technical Specifications Scope</label>
+                        <textarea id="userMessage" rows="5" required placeholder="Outline project framework..."></textarea>
+                    </div>
+                    <button type="submit" class="action-btn">Transmit Specifications</button>
+                    <div id="formFeedback" class="form-feedback-panel"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="colored-footer">
+        <div class="footer-container">
+            <p class="footer-student-info">Student Name: Rainhold Ilonga | Student No: 225097834</p>
+            <p class="footer-copyright">&copy; 2026 Rainhold Ilonga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
